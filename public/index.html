@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Room</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #userList {
+      margin-top: 20px;
+    }
+    #controls {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Online Room</h1>
+  <input type="text" id="username" placeholder="Enter your username">
+  <button id="joinRoom">Join Room</button>
+
+  <h2>Online Users:</h2>
+  <ul id="userList"></ul>
+
+  <div id="controls" style="display:none;">
+    <button id="startVoice">Start Voice</button>
+    <button id="stopVoice">Stop Voice</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
